@@ -1,0 +1,18 @@
+.counters{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    height: 500px;
+    width: 500px;
+    background-color: rgb(208, 230, 233);
+    margin-left:35%;
+    margin-top: 5%;
+}
+.cs{
+    align-self: center;
+    display: flex;
+    justify-content: center; 
+
+}

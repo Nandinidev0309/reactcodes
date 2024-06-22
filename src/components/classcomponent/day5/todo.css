@@ -1,0 +1,13 @@
+.dv{
+    border: 2px solid black;
+    /* display: flex; */
+    /* justify-content: center;
+    flex-direction: column;
+    align-items: center;  */
+    height: 800px;
+    width: 500px;
+    background-color: rgb(205, 214, 101);
+    margin-left:35%;
+    /* margin-top: 10%; */
+    padding-left: 7%;
+}
