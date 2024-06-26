@@ -1,0 +1,55 @@
+
+.circle{
+    border: 2px solid black; 
+    height: 150px;
+    width: 150px;
+    background-color: rgb(127, 255, 182); 
+    border-radius: 150px; 
+    text-align: center; 
+    margin: 20px;
+
+}
+
+.square{
+    border: 2px solid black; 
+    height: 150px;
+    width: 150px;
+    background-color: rgb(131, 14, 135); 
+    margin: 20px;
+}
+
+
+
+.rectangle{
+    border: 2px solid black; 
+    height: 150px;
+    width: 250px;
+    background-color: rgb(84, 48, 163); 
+    margin: 20px;
+    
+}  
+
+.leaf{
+    border: 2px solid black; 
+    height: 150px;
+    width: 150px;
+    background-color: rgb(80, 154, 27); 
+    margin: 20px; 
+    border-top-left-radius: 120px; 
+    border-top-right-radius: 0px; 
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 120px;
+}
+
+.triangle{
+    border: 2px solid black; 
+    height: 200px;
+    width: 250px;
+    background-color: rgb(154, 90, 27); 
+    margin: 20px; 
+    border-top-left-radius: 300px; 
+    border-top-right-radius: 300px; 
+    /* border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 120px; */
+}
+

@@ -1,5 +1,8 @@
+import ButtonComponentClass from "./components/classcomponent/day20/button"
 
-import { Forms } from "./components/functional/day11/day11task/form"
+
+
+
 
 const App = ()=>{
   // const buttonArray=[
@@ -100,7 +103,16 @@ const App = ()=>{
                 <Fakeapi ps={id} title={title} price={price} description={description} category={category} image={image} />
             )
         })} */}
-      <Forms/>
+      
+      {/* <Bootcomponent/> */}
+      {/* <Boot/> */} 
+
+     
+      {/* <Customlist list={["apple","banana","grapes","pineapple"]}></Customlist>
+      <Customlist list={["sunny","bunny","grapy","mummy"]}></Customlist> */}
+
+    {/* <Images pc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s" width="100" height="100" alt="shirt"/> */}
+      <ButtonComponentClass/>
       </div>
   )
 } 

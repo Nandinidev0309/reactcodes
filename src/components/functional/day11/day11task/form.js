@@ -54,17 +54,5 @@ export const Forms=()=>{
     )
 } 
 
-// let n="coders@123"
-// s=n.length 
-// alpha=""
-// char=""
-// no=""  
-
-// for(i=1;i<=s;i++){
-//     if(a-z== n || A-z == n){
-//         alpha=n.i
-//     }
-//     console.log(alpha);
-// }
 
 

@@ -15,12 +15,24 @@ export const Unorderlist=()=>{
     )
 }
 const Listitem=()=>{
+    const eachfruit=["apple","banana","promo","grapes"]
     return(
-        <>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Promo</li>
-        <li>Grapes</li>
-        </>
-    )
+    <>
+        {eachfruit.map((values)=>{
+                return(
+                    <>
+                    <h3>{values}</h3>
+                    </>
+                )
+        })
+        } 
+    </>)
 }
+    // return(
+    //     <>
+    //     <li>Apple</li>
+    //     <li>Banana</li>
+    //     <li>Promo</li>
+    //     <li>Grapes</li>
+    //     </>
+    // )

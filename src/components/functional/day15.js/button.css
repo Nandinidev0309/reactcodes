@@ -1,0 +1,11 @@
+.mystyles{
+    background-color: blue; 
+    color: rgb(228, 218, 211); 
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid black;
+    width: 1000px;
+    margin: 10px;
+    margin-left: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
