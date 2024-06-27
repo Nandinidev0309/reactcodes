@@ -1,4 +1,8 @@
-import ButtonComponentClass from "./components/classcomponent/day20/button"
+
+import Updatingphase from "./components/classcomponent/day24/updatingstage"
+
+
+
 
 
 
@@ -112,7 +116,7 @@ const App = ()=>{
       <Customlist list={["sunny","bunny","grapy","mummy"]}></Customlist> */}
 
     {/* <Images pc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s" width="100" height="100" alt="shirt"/> */}
-      <ButtonComponentClass/>
+     <Updatingphase favColor={"red"}/>
       </div>
   )
 } 
