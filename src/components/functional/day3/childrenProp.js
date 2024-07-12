@@ -1,4 +1,4 @@
-const Greetingcomponenet=(props)=>{
+const Greetingcomponent=(props)=>{
     console.log(props);
 return(
     <>
@@ -6,4 +6,4 @@ return(
     </>
 )
 }
-export default Greetingcomponenet
+export default Greetingcomponent

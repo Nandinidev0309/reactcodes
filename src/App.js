@@ -1,10 +1,6 @@
+// import Stack from "./components/functional/day2-7/nestedNavigations/stack.js"
 
-import Updatingphase from "./components/classcomponent/day24/updatingstage"
-
-
-
-
-
+import Stack from "./components/functional/day2-7/nestedNavigations/stack"
 
 
 
@@ -85,38 +81,50 @@ const App = ()=>{
       {/* <ButtonDay3 text={"Login"} bgcolor={"purple"} buttonproperties={{width:200,height:200}} color={"white"} padding={10} margin={10}/>
       <ButtonDay3 text={"Click Me"} bgcolor={"red"} buttonproperties={{width:200,height:200}} color={"black"} padding={10} margin={10}/>
       <ButtonDay3 text={"Submit"} bgcolor={"blue"} buttonproperties={{width:200,height:200}} color={"white"} padding={10} margin={10}/> */}
-      {/* {
+       {/* {
         buttonArray.map((value)=>{
           const {text,bgcolor,width,height,color,padding,margin,id}=value
           return(
              <ButtonDay3 key={id} text={text} bgcolor={bgcolor} buttonproperties={{width:width,height:height}}  color={color} padding={padding} margin={margin} />
           )
         })
-      } */}
-      {/* <Greetingcomponenet>
+      }  */}
+
+      {/* <Greetingcomponent>
         <>
-        <Imagecomponent ps={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s"}/>
+         <Imagecomponent ps={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s"}/>
         <h1>hello gm</h1>
         <h1>hw ru</h1>
         </>
-      </Greetingcomponenet> */}
+      </Greetingcomponent> */}
       
-        {/* {fake.map((value,)=>{
-            const {id,title,price,description,category,image}=value
+         {/* {fake.map((value,)=>{
+             const {id,title,price,description,category,image}=value
             return(
                 <Fakeapi ps={id} title={title} price={price} description={description} category={category} image={image} />
             )
-        })} */}
-      
-      {/* <Bootcomponent/> */}
-      {/* <Boot/> */} 
+         })}
+       */}
+       {/* <Bootcomponent/> */}
+       {/* <Boot/> */} 
 
      
-      {/* <Customlist list={["apple","banana","grapes","pineapple"]}></Customlist>
-      <Customlist list={["sunny","bunny","grapy","mummy"]}></Customlist> */}
+       {/* <Customlist list={["apple","banana","grapes","pineapple"]}></Customlist>
+       <Customlist list={["sunny","bunny","grapy","mummy"]}></Customlist> */}
 
-    {/* <Images pc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s" width="100" height="100" alt="shirt"/> */}
-     <Updatingphase favColor={"red"}/>
+     {/* <Images pc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgocFKL7nrTQ6SDRjVIIexUKXiye1Vc0YGA&s" width="100" height="100" alt="shirt"/> */}
+     {/* <Updatingphase favColor={"red"}/> */} 
+
+     {/* <h1 className="text-3xl font-bold underline">
+      Hello world!
+     </h1> */} 
+  
+
+
+    {/* <ControlledForm/>
+    */}
+  
+   <Stack/>
       </div>
   )
 } 
