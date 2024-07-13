@@ -5,6 +5,7 @@ function UseEffectEX2() {
     const [count2,setCount2]=useState(0)
     useEffect(()=>{
       console.log("Use Effect Executing");
+      document.title=`React useEffect ${count1}`
     },[count1,count2])
 
     const countHandler1=(()=>{
