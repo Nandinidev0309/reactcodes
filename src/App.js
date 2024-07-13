@@ -1,9 +1,6 @@
-// import Stack from "./components/functional/day2-7/nestedNavigations/stack.js"
-
-import Stack from "./components/functional/day2-7/nestedNavigations/stack"
 
 
-
+import Stack from "./components/functional/day3-7/useEffect/stack"
 const App = ()=>{
   // const buttonArray=[
   //   {
@@ -123,8 +120,9 @@ const App = ()=>{
 
     {/* <ControlledForm/>
     */}
-  
+   
    <Stack/>
+   {/* <UseEffectEX1/> */}
       </div>
   )
 } 

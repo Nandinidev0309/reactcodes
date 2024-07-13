@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../navbar/navbar'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import Carousel from '../../day2-7/nestedNavigations/carousel'
+
 
 
 
