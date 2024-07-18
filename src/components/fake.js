@@ -1,233 +1,37 @@
-import { LockClosedIcon } from "@heroicons/react/solid";
-import { useRef, useState } from "react";
-import SuccessScreen from "./sucess";
+// function Nandini(){
+//   const a=10 
+//   // a+1 
+//   console.log(a);
+//   return(
+//     <>
+//     <h2>{a}</h2>
+//     <button>Increase </button>
+//     </>
+//   )
+// }
+// export default Nandini 
 
-export default function ControlledForm() {
-  const [userName, setUserName] = useState("");
-  const [userNameError, setUserNameError] = useState(false);
-  const [password, setPassword] = useState("");
-  const [passwordError, setPasswordError] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
-  const [userDetails, setUserdetails] = useState({});
+// import React, { useEffect, useState } from 'react'
 
-  const [formItems, setFormItems] = useState({
-    username: "",
-    password: "",
-  });
+// function Fake() {
+//   const[views,setViews]=useState(0)
+//     useEffect(()=>{
+//       const id=setInterval(()=>{
+//         setViews((views)=> views+Math.floor(Math.random)*10)
+//       },1000)
+//       return()=>clearInterval(id);
+//     },[])
+  
+//   return (
+//     <div>
+//         {/* <MovieViews 
+//         title="Kalki"
+//         views={views}
+//         releaseDate="june 30 2024"/> */}
 
-  const [serverError, setServerError] = useState(false);
+       
+//     </div>
+//   )
+// }
 
-  const [remember, setRemember] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (!passwordError && !userNameError) {
-      //valid , hit the server
-      asynPostCall(userName, password);
-    }
-  };
-
-  const asynPostCall = (email, password) => {
-    fetch("https://dummyjson.com/auth/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        username: email,
-        password: password,
-        expiresInMins: 30, // optional, defaults to 60
-      }),
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log(response);
-        if (response.message) {
-          setServerError(response.message);
-        } else {
-          setUserdetails(response);
-          setServerError(false);
-          // user exists in the database
-          setIsLogin(true);
-        }
-      });
-  };
-
-  const userNameValidation = (name) => {
-    let validUsername = false;
-    if (name.length > 10) {
-      validUsername = false;
-    } else {
-      validUsername = true;
-    }
-
-    return validUsername;
-  };
-
-  const usernameHandler = (event) => {
-    const userEntertedUserName = event.target.value;
-    console.log(userEntertedUserName);
-    setUserName(userEntertedUserName);
-
-    if (userNameValidation(userEntertedUserName)) {
-      setUserNameError(false);
-    } else {
-      setUserNameError(true);
-    }
-  };
-
-  const passwordValidation = (password) => {
-    return password.length > 15 ? false : true;
-  };
-
-  const passwordHandler = (event) => {
-    const userEnteredPassword = event.target.value;
-
-    setPassword(userEnteredPassword);
-    if (passwordValidation(userEnteredPassword)) {
-      setPasswordError(false);
-    } else {
-      setPasswordError(true);
-    }
-  };
-
-  const formHandler = (event) => {
-    const { value, name } = event.target;
-    console.log(value, name);
-    setFormItems({ ...formItems, [name]: value });
-  };
-
-  return (
-    <>
-      {isLogin ? (
-        <SuccessScreen data={userDetails} />
-      ) : (
-        <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-md w-full space-y-8">
-            <div>
-              {/* <img
-          className="mx-auto h-12 w-auto"
-          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-          alt="Workflow"
-        /> */}
-              <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                Sign in to your account
-              </h2>
-              <p className="mt-2 text-center text-sm text-gray-600">
-                Or{" "}
-                <a
-                  href="#"
-                  className="font-medium text-indigo-600 hover:text-indigo-500"
-                >
-                  start your 14-day free trial
-                </a>
-              </p>
-            </div>
-            <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-              <input type="hidden" name="remember" defaultValue="true" />
-              <div className="rounded-md shadow-sm -space-y-px">
-                <div>
-                  <label htmlFor="email-address" className="sr-only">
-                    Email address
-                  </label>
-                  <input
-                    id="email-address"
-                    name="username"
-                    type="text"
-                    autoComplete="email"
-                    value={formItems.username}
-                    onChange={formHandler}
-                    required
-                    className="appearance-none rounded-none relative block
-                w-full px-3 py-2 border border-gray-300
-                placeholder-gray-500 text-gray-900 rounded-t-md
-                focus:outline-none focus:ring-indigo-500
-                focus:border-indigo-500 focus:z-10 sm:text-sm"
-                    placeholder="Email address"
-                  />
-                  {userNameError && (
-                    <span style={{ color: "red" }}>Invalid user name</span>
-                  )}
-                </div>
-                <div>
-                  <label htmlFor="password" className="sr-only">
-                    Password
-                  </label>
-                  <input
-                    id="password"
-                    name="password"
-                    type="password"
-                    autoComplete="current-password"
-                    required
-                    value={formItems.password}
-                    onChange={formHandler}
-                    className="appearance-none rounded-none relative block
-                w-full px-3 py-2 border border-gray-300
-                placeholder-gray-500 text-gray-900 rounded-b-md
-                focus:outline-none focus:ring-indigo-500
-                focus:border-indigo-500 focus:z-10 sm:text-sm"
-                    placeholder="Password"
-                  />
-                  {passwordError && (
-                    <span style={{ color: "red" }}>Invalid Password</span>
-                  )}
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <div className="flex items-center">
-                  <input
-                    id="remember-me"
-                    name="remember-me"
-                    type="checkbox"
-                    value={remember}
-                    className="h-4 w-4 text-indigo-600 focus:ring-indigo-500
-                border-gray-300 rounded"
-                  />
-                  <label
-                    htmlFor="remember-me"
-                    className="ml-2 block text-sm text-gray-900"
-                  >
-                    Remember me
-                  </label>
-                </div>
-
-                <div className="text-sm">
-                  <a
-                    href="#"
-                    className="font-medium text-indigo-600 hover:text-indigo-500"
-                  >
-                    Forgot your password?
-                  </a>
-                </div>
-              </div>
-
-              {serverError && (
-                <span style={{ color: "red" }}>{serverError}</span>
-              )}
-
-              <div>
-                {!userNameError && !passwordError && (
-                  <button
-                    type="submit"
-                    className="group relative w-full flex justify-center
-              py-2 px-4 border border-transparent text-sm font-medium
-              rounded-md text-white bg-indigo-600 hover:bg-indigo-700
-              focus:outline-none focus:ring-2 focus:ring-offset-2
-              focus:ring-indigo-500"
-                  >
-                    <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                      <LockClosedIcon
-                        className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    Sign in
-                  </button>
-                )}
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-    </>
-  );
-}
+// export default Fake

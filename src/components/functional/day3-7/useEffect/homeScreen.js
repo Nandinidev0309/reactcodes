@@ -1,6 +1,4 @@
 
-
-
 import Navbar from '../../day1-7/navbar/navbar'
 // import BothCombineEX12 from './bothCombineEX1&2'
 // import BothCombineEX21 from './bothCombineEX2&1'

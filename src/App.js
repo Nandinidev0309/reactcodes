@@ -1,6 +1,10 @@
 
 
-import Stack from "./components/functional/day3-7/useEffect/stack"
+// import Country from "./components/functional/country"
+
+import ReducerUse from "./components/functional/day10-7/useReducerEx2"
+
+// import Stack from "./components/functional/day9-7/stack"
 const App = ()=>{
   // const buttonArray=[
   //   {
@@ -121,8 +125,11 @@ const App = ()=>{
     {/* <ControlledForm/>
     */}
    
-   <Stack/>
+   {/* <Stack/> */}
+   {/* <Country/> */}
    {/* <UseEffectEX1/> */}
+
+   <ReducerUse/>
       </div>
   )
 } 
