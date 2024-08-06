@@ -1,0 +1,9 @@
+#bgcontainer{
+    background-color: aqua;
+    color: blue;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border: 1px dashed black;
+    padding: 30px;
+}

@@ -1,0 +1,30 @@
+/* * {
+  background-color: rgb(136, 245, 191);
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.div1 {
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid black;
+}
+
+.maindiv {
+  margin-left: 4px;
+
+}
+
+/* custom.css */
+/* .card {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0.3s ease-in-out;
+  box-shadow: inset 0px 4px 5px rgb(91, 216, 91);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */

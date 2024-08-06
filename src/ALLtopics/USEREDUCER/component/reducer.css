@@ -1,0 +1,11 @@
+#bgcontainer{
+    background-color: rgb(142, 188, 215);
+    color: rgb(111, 15, 155);
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border: 1px dashed black;
+    padding: 30px;
+    margin-left: 40%;
+    margin-top: 10%;
+}
