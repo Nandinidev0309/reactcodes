@@ -102,10 +102,10 @@ function WeatherTask() {
       }
       const data = await response.json();
       setWeather(data);
-      setError(null);  // Clear any previous errors
+      setError(null);  
     } catch (err) {
       setError(err.message);
-      setWeather(null);  // Clear previous weather data if there was an error
+      setWeather(null);  
     }
   };
 

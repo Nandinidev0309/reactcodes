@@ -1,10 +1,13 @@
 
 // import RecipeTask from "./My-Practise/RecipeTask/RecipeTask";
-// import CountryTask from "./My-Practise/CountryTask/CountryTask";
-
-import CurrencyTask from "./CurrencyProject/Currency";
-
+//  import CountryTask from "./My-Practise/CountryTask/CountryTask";
+// import CurrencyTask from "./My-Practise/CurrencyTask/CurrencyTask";
 // import WeatherTask from "./My-Practise/WeatherTask.js/WeatherTask";
+
+import Stack from "./My-Practise/Merge/Stack";
+
+//  import Navlink from "./My-Practise/Merge/Navigation/Navlink";
+
 
 
 // ......................................
@@ -201,7 +204,10 @@ const App = () => {
 {/* <RecipeTask/> */}
 {/* <CountryTask/> */}
 {/* <WeatherTask/> */}
-<CurrencyTask/>
+{/* <CurrencyTask/> */}
+{/* <Stack/> */}
+{/* <Navlink/> */}
+<Stack/>
     </div>
   );
 };

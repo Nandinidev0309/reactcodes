@@ -41,6 +41,8 @@ const Modal = ({ recipe, onClose }) => {
             <li key={index}>{item}</li>
           ))}
         </ul>
+        instructions
+        <li>{recipe.instructions}</li>
         <button onClick={onClose} style={{ marginTop: "20px" }}>
           Close
         </button>

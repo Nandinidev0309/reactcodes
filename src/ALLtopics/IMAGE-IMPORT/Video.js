@@ -8,6 +8,7 @@ function Video() {
         <video height={300} width={300} controls muted download>
             <source src={Logos}></source>
         </video>
+        
         </center>
     </div>
   )
