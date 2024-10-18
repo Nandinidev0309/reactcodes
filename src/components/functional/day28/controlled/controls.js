@@ -11,4 +11,6 @@ function FavouriteColor(){
     </>
    )
 } 
-export default FavouriteColor
+export default FavouriteColor   
+
+// this is useState

@@ -4,6 +4,8 @@
 // import CurrencyTask from "./My-Practise/CurrencyTask/CurrencyTask";
 // import WeatherTask from "./My-Practise/WeatherTask.js/WeatherTask";
 
+
+
 import Stack from "./My-Practise/Merge/Stack";
 
 //  import Navlink from "./My-Practise/Merge/Navigation/Navlink";
@@ -125,7 +127,7 @@ const App = () => {
   return (
     <div>
       {/* <store.Provider value={[data, setData]}>
-        <Count />
+         <Count />
         <Display />
       </store.Provider> */}
       {/* <button onClick={()=>setData(data+1)}>Increment</button> */}
@@ -208,6 +210,7 @@ const App = () => {
 {/* <Stack/> */}
 {/* <Navlink/> */}
 <Stack/>
+
     </div>
   );
 };
